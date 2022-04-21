@@ -40,6 +40,6 @@ var (
 )
 
 func OpenCollection(client *mongo.Client, collectionName string) *mongo.Collection {
-	collection := client.Database("cluster0").Collection(collectionName)
+	collection := client.Database("jwt-go").Collection(collectionName)
 	return collection
 }
